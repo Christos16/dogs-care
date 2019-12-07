@@ -1,0 +1,48 @@
+h5 {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .touched {
+    width: 180px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: purple;
+    color: #ffffff;
+
+    &:hover {
+      color: purple !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px;
+      background-color: white;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .touched {
+    width: 315px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: purple;
+    color: #ffffff;
+
+    &:hover {
+      color: purple !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px;
+      background-color: white;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+.couleur {
+  color: purple
+}

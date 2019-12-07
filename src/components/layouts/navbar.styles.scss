@@ -1,0 +1,91 @@
+.img {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 20px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: lightpink !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+  }
+
+  // &:hover {
+  // background-color: white;
+  //  color: black;
+  //  border: 1px solid black;
+  //  }
+  &.google-sign-in {
+    background-color: #4285f4;
+    color: white;
+    &:hover {
+      background-color: #357ae8;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .col-md-3 {
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+}
+
+li {
+  font-family: 'Bitter';
+}
+
+body {
+  font-family: 'Bitter';
+}
+
+.cart-dropdown {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: grey;
+  top: 90px;
+  right: 40px;
+  z-index: 5;
+}
+
+.under {
+  &hover {
+    text-decoration: black;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}

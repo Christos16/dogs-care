@@ -1,0 +1,196 @@
+{
+  "petsitter": [
+    {
+      "id": 1,
+      "description": "Trusted by many clients",
+      "bio": "I have always had pets in my life and treated them all like family. I have had cats, dogs, rats, mice, rabbits; and look forward to adding to that list!",
+      "available": true,
+      "badge": "certified",
+      "pricing": "Pay negotiable",
+      "name": "Georgia Williams",
+      "img": "./images/petsitter1.jpeg",
+      "location": "Athens, Greece",
+      "online": "Last seen 30 minutes ago...",
+      "experience": [
+        {
+          "years": "5 years experience"
+        },
+        {
+          "pets": "Dogs, Cats, Fish, Small mammals"
+        }
+      ],
+      "services": "Pet boarding, Dog walking, Pet Stay, Dog Groaming",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter",
+          "facebook": "facebook.com/petsitter",
+          "youtube": "youtube.com/petsitter"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "Love animals and taking care of them",
+      "bio": "My service centers around, walking, feeding and caring for dogs. From puppies to seniors, I can care for your dog(s) like my family pet. Service provided in your home. Would love to discuss your pet care needs. References available. Love all dogs ! Reasonable rates.",
+      "available": true,
+      "badge": "certified",
+      "name": "Olga Kostopoulos",
+      "pricing": "15/h",
+      "img": "./images/sitter2.jpeg",
+      "online": "Last seen 2 hours ago...",
+      "location": "Kifissia",
+      "experience": [
+        {
+          "years": "2 years experience"
+        },
+        {
+          "pets": "Dogs"
+        }
+      ],
+      "services": " Dog walking, Dog Groaming",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter",
+          "facebook": "facebook.com/petsitter",
+          "youtube": "youtube.com/petsitter"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "description": "Responsible Pet Sitter",
+      "bio": "Hi there my name is John. I'm seeking a dog sitter work opportunity in York, Pennsylvania. I'm hoping to utilize my experience as a dog sitter. I will work part",
+      "available": true,
+      "badge": "certified",
+      "name": "John Humman",
+      "pricing": "8/h",
+      "img": "./images/sitter3.jpeg",
+      "online": "Last seen 5 hours ago...",
+      "location": "Marousi",
+      "experience": [
+        {},
+        {
+          "pets": "Dogs, Cats, Fish, Small mammals"
+        }
+      ],
+      "services": "Pet boarding, Dog walking, Pet Stay, Dog Groaming",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter",
+          "facebook": "facebook.com/petsitter",
+          "youtube": "youtube.com/petsitter"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "description": "Let me love on your PET just like I would love mine",
+      "bio": "Nice to meet you! My name is Amber. I am an Athens based pet sitter, that will travel to you and help take care of your fur family when you are away. I offer all animal care, dog/cat walking, potty break visits, check in visits, overnight care and more.",
+      "available": true,
+      "name": "Amber Kollidas",
+      "img": "./images/sitter4.jpeg",
+      "online": "Last seen 20 hours ago...",
+      "location": "Athens, Greece",
+      "experience": [
+        {
+          "years": "2 years experience"
+        },
+        {
+          "pets": "Dogs"
+        }
+      ],
+      "services": " Dog walking, Dog Groaming",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter",
+          "facebook": "facebook.com/petsitter",
+          "youtube": "youtube.com/petsitter"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "description": "If you look for quality service, search no more",
+      "bio": "Nice to meet you! My name is Lucy. In need of a in- home pet sitter? No need to worry my goal is to reduce separation anxiety by staying in your home while u are away .",
+      "available": true,
+      "badge": "certified",
+      "name": "Kostas Samaris",
+      "img": "./images/sitter5.jpeg",
+      "online": "Last seen 14 hours ago...",
+      "location": "Athens, Greece",
+      "experience": [
+        {},
+        {
+          "pets": "Dogs, Cats, Fish, Small mammals"
+        }
+      ],
+      "services": "Pet boarding, Dog walking, Pet Stay, Dog Groaming",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter",
+          "facebook": "facebook.com/petsitter",
+          "youtube": "youtube.com/petsitter"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "description": "Impatient to work with you and love your pet like you would",
+      "bio": "I am recently retired from 40 years of working as business owner and since my retirement I have been travelling the world house and pet sitting.",
+      "available": true,
+      "badge": "certified",
+      "name": "Lori Katzaki",
+      "img": ".././images/sitter6.jpeg",
+      "location": "Athens, Greece",
+      "online": "Last seen 3 days ago...",
+      "experience": [
+        {
+          "years": "3 years experience"
+        },
+        {
+          "pets": "Dogs, Cats, Fish, Small mammals"
+        }
+      ],
+      "services": "Pet boarding, Dog walking, Pet Stay, Dog Groaming",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter",
+          "facebook": "facebook.com/petsitter",
+          "youtube": "youtube.com/petsitter"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "description": "For premium services, you are looking at the right profile",
+      "bio": "I am happy to help with cat feeding, providing play time, and overnight boarding. Further, I am willing to travel. I have over a year of experience.",
+      "available": true,
+      "badge": "certified",
+      "name": "Alex Papadopoulos",
+      "img": ".././images/sitter7.jpeg",
+      "location": "Athens, Greece",
+      "online": "Last seen 1 hours ago...",
+      "experience": [
+        {
+          "years": "1 year experience"
+        },
+        {
+          "pets": " Cats"
+        }
+      ],
+      "services": "Cat boarding",
+      "social": [
+        {
+          "instagram": "instagram.com/petsitter"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "chris@gmail.com",
+      "password": "$2a$10$RAZKBb7XDaI7WbWI2ivvFOAI7XbZZFnVmVyu0aU7awk9xMeyJb2Sa",
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+.image {
+  max-width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.94;
+    transition: ease-in 0.25s ease-out 0.25s;
+  }
+}
+
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 px;
+  font-size: 10px;
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: purple !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+  }
+
+  // &:hover {
+  // background-color: white;
+  //  color: black;
+  //  border: 1px solid black;
+  //  }
+  &.google-sign-in {
+    background-color: #4285f4;
+    color: white;
+    &:hover {
+      background-color: #357ae8;
+      border: none;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  font-family: 'Roboto';
+  padding: 30px;
+
+  .card {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .col-md-3 {
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+  .carte {
+    width: 370px;
+    padding: 20px;
+  }
+}
+
+.click {
+  font-size: 10px;
+  color: #ccc;
+  background-color: purple;
+  text-transform: uppercase;
+  width: 100px;
+  margin-bottom: 20px;
+
+  &:hover {
+    color: purple !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+  }
+}
+
+.tub {
+  margin-bottom: 10px;
+  &:hover {
+    color: whitesmoke !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    background-color: rgb(219, 90, 187);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+  }
+}

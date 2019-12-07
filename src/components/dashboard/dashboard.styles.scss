@@ -1,0 +1,41 @@
+.dashboard {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.p {
+  color: purple;
+}
+
+.body {
+  background-color: '#dbd3d3';
+}
+
+.history {
+  border-radius: 5px;
+}
+.colone {
+  font-family: 'Open Sans-Serif';
+  border-right: 10px;
+}
+
+th {
+  font-size: 20px;
+  font-weight: bold;
+  color: 'white';
+}
+
+@media only screen and (max-width: 768px) {
+  th {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  td {
+    font-size: 15px;
+  }
+  .zero {
+    font-size: 15px;
+  }
+}

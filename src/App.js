@@ -18,6 +18,9 @@ import { SET_AUTHENTICATED } from '../src/actions/types';
 import { getUserData, logoutUser } from './actions/authAction';
 import jwtDecode from 'jwt-decode';
 
+const cors = require('cors');
+app.use(cors());
+
 import Booking from './bookings/Booking';
 import EditProfile from './components/Posts/EditProfile';
 import PrivacyPolicy from './components/layouts/PrivacyPolicy';

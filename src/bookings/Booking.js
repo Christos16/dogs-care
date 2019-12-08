@@ -95,7 +95,7 @@ class Booking extends Component {
                           class='form-control'
                           value={this.state.from}
                           placeholder=''
-                          //required
+                          required
                           onChange={this.onChange}
                           // onClick={this.onDate}
                         />
@@ -119,7 +119,7 @@ class Booking extends Component {
                           id='datePickerId'
                           class='form-control'
                           onChange={this.onChange}
-                          //required
+                          required
                           // onClick={this.onDate}
                         />
                       </div>

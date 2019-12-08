@@ -93,7 +93,10 @@ class EditProfile extends Component {
       linkedin: this.state.linkedin,
       instagram: this.state.instagram
     };
-    this.props.createProfile(credentialsData, this.props.history);
+    this.props.createProfile(
+      credentialsData,
+      this.props.history.push(`/dashboard/${this.props.credentials.handle}`)
+    );
   };
 
   handleImageChange = event => {

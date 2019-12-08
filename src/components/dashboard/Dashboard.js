@@ -18,7 +18,7 @@ class Dashboard extends Component {
     const { credentials } = this.props.credentials;
     const { booking } = this.props.booking;
 
-    if (Object.keys(credentials).length > 0) {
+    if (credentials.location) {
       dashboardContent = (
         <div>
           <p className='lead text-muted p' style={{ color: 'purple' }}>
@@ -57,10 +57,17 @@ class Dashboard extends Component {
     } else {
       dashboardContent = (
         <div>
-          <p className='lead text-muted p'>Welcome </p> {credentials.handle}
-          <p>You have not yet setup a profile, please add some info</p>
-          <Link to='/create-profile' className='btn btn-lg btn-info'>
-            Create Profile
+          <p className='lead text-muted '>Welcome </p>
+          <p className>
+            You have not yet setup a profile, please add some info
+          </p>
+          <Link to='/create-profile'>
+            <button
+              className=' btn btn-lg'
+              style={{ backgroundColor: 'purple', color: 'white' }}
+            >
+              Create Profile
+            </button>
           </Link>
         </div>
       );

@@ -103,11 +103,15 @@ class Register extends Component {
                 <button
                   type='submit'
                   className='btn btn-info btn-block mt-4 button'
+                  style={{ backgroundColor: 'purple', color: 'white' }}
                 >
                   SIGN UP
                 </button>
                 <div className='text-center lead'>or</div>
-                <p className='lead text-center'>
+                <p
+                  className='lead text-center text-muted'
+                  style={{ fontSize: '15px' }}
+                >
                   If you already have an account, you can sign in
                 </p>
                 <Link to='/login'>

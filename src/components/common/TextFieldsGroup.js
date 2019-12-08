@@ -25,6 +25,7 @@ const TextFieldsGroup = ({
         value={value}
         onChange={onChange}
         disabled={disabled}
+        required
       />
       {info && (
         <small className='form-text text-muted' style={{ color: 'purple' }}>

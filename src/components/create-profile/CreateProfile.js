@@ -44,7 +44,15 @@ class CreateProfile extends Component {
       linkedin: this.state.linkedin,
       instagram: this.state.instagram
     };
-    this.props.createProfile(profileData, this.props.history.push('/'));
+    this.props.createProfile(profileData);
+
+    setTimeout(() => {
+      this.redirect();
+    }, 4000);
+  };
+
+  redirect = () => {
+    return this.props.history.push('/');
   };
 
   handleImageChange = event => {
@@ -168,26 +176,29 @@ class CreateProfile extends Component {
               <small className='d-block pb-3'>* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldsGroup
-                  placeholder='Location'
+                  placeholder='* Address'
                   name='location'
                   value={this.state.location}
                   onChange={this.onChange}
-                  info='City Country (eg. Athens, Greece)'
+                  info='State your full address (eg. Ermou 69, Syntagma)'
+                  required
                 />
                 <TextFieldsGroup
-                  placeholder='Breed'
+                  placeholder='* Breed'
                   name='breed'
                   value={this.state.breed}
                   onChange={this.onChange}
                   info='Tell us the breed of your pet'
+                  required
                 />
                 <SelectListGroup
-                  placeholder='Size'
+                  placeholder='* Size'
                   name='size'
                   value={this.state.size}
                   onChange={this.onChange}
                   options={options}
                   info='Give us an idea of the size of your pet'
+                  required
                 />
                 <TextFieldsGroup
                   placeholder='* Pet description'
@@ -195,13 +206,15 @@ class CreateProfile extends Component {
                   value={this.state.personality}
                   onChange={this.onChange}
                   info='Please use coma separated values to describe your pet(e.g Playfull, Sweet, Loves to eat, Afraid of storms ect...)'
+                  required
                 />
                 <TextAreaFieldGroup
-                  placeholder='Short Bio'
+                  placeholder='* Short Bio'
                   name='bio'
                   value={this.state.bio}
                   onChange={this.onChange}
                   info='Tell us a little about yourself and your pet...'
+                  isRequired
                 />
                 <div className='mb-3'>
                   <button
@@ -222,6 +235,7 @@ class CreateProfile extends Component {
                   type='submit'
                   className='btn btn-primary btn-block mt-4'
                   value='Submit'
+                  style={{ backgroundColor: 'purple', color: 'white' }}
                 />
               </form>
             </div>

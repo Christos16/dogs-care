@@ -16,6 +16,7 @@ const TextAreaFieldGroup = ({
         name={name}
         value={value}
         onChange={onChange}
+        required
       />
       {info && (
         <small className='form-text text-muted' style={{ color: 'purple' }}>

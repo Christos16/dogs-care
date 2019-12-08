@@ -13,6 +13,7 @@ const SelectListGroup = ({ name, value, error, info, onChange, options }) => {
         name={name}
         value={value}
         onChange={onChange}
+        required
       >
         {' '}
         {selectOptions}

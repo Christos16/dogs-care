@@ -1,10 +1,4 @@
-import {
-  GET_SITTERS,
-  GET_SITTER,
-  SET_LOADING,
-  FILTER_CONTACTS,
-  SET_ERRORS
-} from './types';
+import { GET_SITTERS, GET_SITTER, SET_LOADING, FILTER_CONTACTS } from './types';
 import axios from 'axios';
 
 export const getSitters = () => dispatch => {
@@ -46,11 +40,6 @@ export const filterContacts = text => dispatch => {
 export const createProfile = (profileData, history) => dispatch => {
   axios
     .post('/user', profileData)
-    .then(res => history.push('/dashboard'))
-    .catch(err =>
-      dispatch({
-        type: SET_ERRORS,
-        payload: err.response.data
-      })
-    );
+    .then(() => history.push('/dashboard'))
+    .catch(err => console.log(err));
 };

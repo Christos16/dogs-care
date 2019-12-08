@@ -22,6 +22,9 @@ import Booking from './bookings/Booking';
 import EditProfile from './components/Posts/EditProfile';
 import PrivacyPolicy from './components/layouts/PrivacyPolicy';
 
+axios.defaults.baseURL =
+  'https://europe-west1-dogs-care.cloudfunctions.net/api';
+
 const token = localStorage.FBIdToken;
 if (token) {
   const decodedToken = jwtDecode(token);

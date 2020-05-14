@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './sitter-profile.styles.scss';
 import PropTypes from 'prop-types';
 import './sitter-profile.styles.scss';
-
+import { Link } from 'react-router-dom';
 const SitterItem = ({ sitter }) => {
   return (
     <div className='card'>

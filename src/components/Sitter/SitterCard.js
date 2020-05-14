@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './sitter-card.styles.scss';
 import { getSitters } from '../../actions/SittersAction';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class SitterCard extends Component {
@@ -16,7 +15,7 @@ class SitterCard extends Component {
       <div>
         {sitters.map(sitter => (
           <div
-            className='row mb-4'
+            className='row mb-4 mob'
             style={{
               borderRadius: '10px',
               borderStyle: 'groove ',
@@ -54,7 +53,7 @@ class SitterCard extends Component {
               </p>
 
               <div>
-                <Link to={`/sitters/${sitter.sitterId}`}>
+                <a href={`/sitters/${sitter.sitterId}`}>
                   <button
                     style={{ backgroundColor: 'purple' }}
                     className='btn btn-sm tub'
@@ -62,7 +61,7 @@ class SitterCard extends Component {
                     {' '}
                     Visit Profile
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

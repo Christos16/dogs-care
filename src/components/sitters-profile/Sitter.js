@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { getSitter } from '../../actions/SittersAction';
 import { connect } from 'react-redux';
 import Spinner from '../common/Spinner';
-import { Link } from 'react-router-dom';
 import ProfileHeader from './ProfileHeader';
 
 class Sitter extends Component {
@@ -20,12 +19,12 @@ class Sitter extends Component {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 mt-4' style={{ color: 'purple' }}>
-              <Link to='/' className=''>
+              <a href='/' className=''>
                 <span className='reference'> Home > </span>
-              </Link>
-              <Link to='/petsitters' className=''>
+              </a>
+              <a href='/petsitters' className=''>
                 <span className='reference'>Petsitters > </span>
-              </Link>
+              </a>
               <span className='reference'> {sitter.sitterHandle}</span>
             </div>
           </div>

@@ -102,3 +102,9 @@ h2::after {
   background: #800080;
   border: 5px double;
 }
+
+@media only screen and (max-width: 375px) {
+  .credit {
+    padding: 5px;
+  }
+}

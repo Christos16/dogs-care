@@ -44,5 +44,22 @@ h5 {
 }
 
 .couleur {
-  color: purple
+  color: purple;
+}
+
+@media only screen and (max-width: 375px) {
+  .big {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .touched {
+    width: 125px;
+  }
+  .response {
+    font-size: 13px;
+  }
+  .titre {
+    font-size: 13px;
+    width: 160px;
+  }
 }

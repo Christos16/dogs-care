@@ -42,7 +42,7 @@ class Login extends Component {
     const { email, password, errors } = this.state;
 
     return (
-      <div className='login'>
+      <div className='login' app-test='Login'>
         <div className='container'>
           <div className='row mt-5'>
             <div className='col-md-8 m-auto'>

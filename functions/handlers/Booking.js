@@ -22,7 +22,10 @@ exports.getSitters = (req, res) => {
           bio: doc.data().bio,
           image: doc.data().imgUrl,
           location: doc.data().location,
-          description: doc.data().description
+          description: doc.data().description,
+          Competence: doc.data().Competence,
+          pricing: doc.data().pricing,
+          responsibility: doc.data().responsibility
         });
       });
       return res.json(sitters);
@@ -88,6 +91,7 @@ exports.bookingSitter = (req, res) => {
         email: req.user.email,
         sitterHandle: sitterData.sitterHandle,
         pricing: sitterData.pricing,
+        sitterImage: sitterData.imgUrl,
         services: sitterData.services,
         userId: req.user.uid,
         userHandle: req.user.handle,
@@ -124,8 +128,9 @@ exports.getBooking = (req, res) => {
           to: doc.data().to,
           createAt: doc.data().createAt,
           userHandle: req.user.handle,
-          userId: req.user.uid, 
-          comment: doc.data().comment
+          userId: req.user.uid,
+          comment: doc.data().comment,
+          sitterImage: doc.data().sitterImage
         });
       });
       return res.json(bookingData);

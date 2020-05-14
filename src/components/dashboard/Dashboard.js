@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUserData } from '../../actions/authAction';
-import { Link } from 'react-router-dom';
 import './dashboard.styles.scss';
 import { getBooking } from '../../actions/bookingAction';
 import Moment from 'react-moment';
 import PropTypes from 'prop-types';
-
+import styles from './table.module.scss';
 class Dashboard extends Component {
   componentDidMount() {
     this.props.getUserData();
@@ -40,17 +39,23 @@ class Dashboard extends Component {
             </span>
           </p>
           <p>
-            <Link to={`/edit-profile/${credentials.userId}`}>
-              <button href='#' className='btn btn-group-sm btn-lg touch under'>
+            <a href={`/edit-profile/${credentials.userId}`}>
+              <button
+                href='#'
+                className={`btn btn-group-sm btn-lg touch under ${styles.button}`}
+              >
                 <i className='fa fa-user mr-2' /> Edit Profile
               </button>
-            </Link>
+            </a>
             {'     '}
-            <Link to='/petsitters'>
-              <button href='#' className=' btn btn-group-sm btn-lg touch under'>
+            <a href='/petsitters'>
+              <button
+                href='#'
+                className={`btn btn-group-sm btn-lg touch under ${styles.button}`}
+              >
                 <i className='fa fa-dog mr-2' /> Book a sitter
               </button>
-            </Link>
+            </a>
           </p>
         </div>
       );
@@ -61,14 +66,14 @@ class Dashboard extends Component {
           <p className>
             You have not yet setup a profile, please add some info
           </p>
-          <Link to='/create-profile'>
+          <a href='/create-profile'>
             <button
               className=' btn btn-lg'
               style={{ backgroundColor: 'purple', color: 'white' }}
             >
               Create Profile
             </button>
-          </Link>
+          </a>
         </div>
       );
     }
@@ -96,7 +101,7 @@ class Dashboard extends Component {
     ));
 
     return (
-      <div>
+      <div className='container' data-test='Dashboard'>
         <body className=''>
           <div className='row text-center mt-5'>
             <div className='col-md-12'>
@@ -106,9 +111,9 @@ class Dashboard extends Component {
             </div>
           </div>
 
-          <div className='ml-4 mr-4 colone'>
+          <div className={styles.table}>
             <h3 className='text-muted'>Booking History</h3>
-            <table class='table table-sm table-hover table-light history'>
+            <table class='table table-sm table-hover table-light table-responsive'>
               <thead>
                 <tr className='text-white bg-dark'>
                   <th scope='col'>#Booking</th>

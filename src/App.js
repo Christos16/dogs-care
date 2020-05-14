@@ -41,7 +41,7 @@ if (token) {
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div data-test='AppComponent'>
         <Navbar />
 
         <Route exact path='/' component={Body} />
@@ -75,7 +75,7 @@ class App extends React.Component {
             component={Booking}
           />
         </Switch>
-      </>
+      </div>
     );
   }
 }

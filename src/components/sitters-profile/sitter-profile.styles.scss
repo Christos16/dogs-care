@@ -150,6 +150,14 @@ i {
     text-align: center;
   }
   .dernier {
-    margin-left: '40px'
+    margin-left: '40px';
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mob {
+    margin-right: 0px;
+
+    width: 300px;
   }
 }

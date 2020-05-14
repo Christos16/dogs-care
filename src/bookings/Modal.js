@@ -1,5 +1,4 @@
 import React from 'react';
-import './modal.css';
 import styled from 'styled-components';
 
 const Notif = styled.div`  

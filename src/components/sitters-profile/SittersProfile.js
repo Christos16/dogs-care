@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getSitters } from '../../actions/SittersAction';
-import { Link } from 'react-router-dom';
 import SitterItem from './SitterItem';
 import Spinner from '../common/Spinner';
 import './sitter-profile.styles.scss';
@@ -21,27 +20,28 @@ class SittersProfile extends Component {
       sitterItem = sitters.map(sitter => <SitterItem sitter={sitter} />);
     }
 
-    let sitterCount = sitters.length;
-
     return (
-      <div>
+      <div data-test='Sitters'>
         <div className='jumbotron' style={{ padding: '20px' }}>
-          <Link to='/'>
+          <a href='/'>
             {' '}
             <span className='reference'>Home</span>
-          </Link>{' '}
+          </a>{' '}
           >{' '}
-          <Link to='/petsitters'>
+          <a href='/petsitters'>
             <span className='reference'>Pet Sitters</span>
-          </Link>
+          </a>
         </div>
         <div className='container'>
           <div
             className='mt-4 text-muted'
             style={{ fontFamily: 'Open Sans Serif', fontSize: '20px' }}
           >
-            There are currently: <strong>{sitterCount}</strong> sitters
-            available
+            There are currently:{' '}
+            <strong style={{ color: 'black', fontSize: '35px' }}>
+              {sitters.length}
+            </strong>{' '}
+            sitters available
           </div>
 
           <div className='grid'>{sitterItem}</div>

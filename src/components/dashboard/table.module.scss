@@ -1,0 +1,12 @@
+.table {
+  margin-left: 50px;
+}
+
+@media (max-width: 770px) {
+  .table {
+    margin-left: 0px;
+  }
+  .button {
+    font-size: 10px;
+  }
+}

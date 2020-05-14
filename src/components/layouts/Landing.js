@@ -16,26 +16,22 @@ class Landing extends Component {
     const LoggedIn = (
       <div className='welcome'>
         Welcome{' '}
-        <strong className='username'>
-          <u style={{ color: 'purple' }}>
-            <Link to={`/dashboard/${credentials.handle}`}>
-              {credentials.handle}{' '}
-            </Link>
-          </u>
-        </strong>
+        <a href={`/dashboard/${credentials.handle}`}>
+          <button className='btn btn-primary'>{credentials.handle} </button>
+        </a>
       </div>
     );
 
     const guest = (
       <p>
         <Link to={'/register'}>
-          <button href='#' className='btn btn-group-sm btn-lg touch under'>
+          <button href='#' className='btn btn-group-sm btn-lg iphone under'>
             Register
           </button>
         </Link>
         {'     '}
         <Link to={'/login'}>
-          <button href='#' className=' btn btn-group-sm btn-lg touch under'>
+          <button href='#' className=' btn btn-group-sm btn-lg iphone under'>
             Login
           </button>
         </Link>

@@ -15,7 +15,7 @@ export const bookNow = (sitterId, newBooking) => dispatch => {
       dispatch({ type: BOOKING_NOW, payload: res.data });
       dispatch({ type: CLEAR_ERRORS });
     })
-    .catch(err => dispatch({ type: SET_ERRORS, payload: err.response.data }));
+    .catch(err => console.log(err));
 };
 
 export const setLoading = () => dispatch => ({

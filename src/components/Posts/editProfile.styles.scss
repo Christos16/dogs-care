@@ -1,38 +1,37 @@
-@media only screen and (max-width: 768px){
-    .changement {
-        margin-left: 140px;
-        margin-bottom: 25px;
-        width: 232px
+@media only screen and (max-width: 768px) {
+  .changement {
+    margin-left: 140px;
+    margin-bottom: 25px;
+    width: 232px;
+  }
+  .icone {
+    color: white;
+    &:hover {
+      color: purple;
+      font-weight: 200 !important;
+      letter-spacing: 1px;
+      background-color: white;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      transition: all 0.3s ease 0s;
     }
-    .icone {
-        color: white;
-        &:hover {
-            color:purple;
-            font-weight: 200 !important;
-            letter-spacing: 1px;
-            background-color: white;
-            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-            transition: all 0.3s ease 0s;
-          }
-    }
-    
+  }
 }
 
 .toucher {
-    background-color: purple;
-    color: white;
-    &:hover {
-        color:purple;
-        font-weight: 200 !important;
-        letter-spacing: 1px;
-        background-color: white;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-        transition: all 0.3s ease 0s;
-      }
+  background-color: purple;
+  color: white;
+  &:hover {
+    color: purple;
+    font-weight: 200 !important;
+    letter-spacing: 1px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+  }
 }
 
 .icone {
-    color: white
+  color: white;
 }

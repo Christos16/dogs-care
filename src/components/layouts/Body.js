@@ -9,13 +9,20 @@ import Footer from './Footer';
 const Body = () => {
   return (
     <Fragment>
-      <Fragment>
+      <div
+        style={{
+          width: '100%',
+          margin: '0px',
+          padding: '0px',
+          overflowX: 'hidden'
+        }}
+      >
         <Landing />
         <Details />
         <hr className='featurette-divider mb-5' />
         <Services />
         <Testimonial />
-      </Fragment>
+      </div>
       <Footer />
     </Fragment>
   );

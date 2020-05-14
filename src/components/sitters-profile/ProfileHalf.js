@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getSitters } from '../../actions/SittersAction';
 import SitterCard from '../Sitter/SitterCard';
-import { Link } from 'react-router-dom';
 import './sitter-profile.styles.scss';
 import PropTypes from 'prop-types';
 
@@ -23,14 +22,14 @@ class ProfileHalf extends Component {
         >
           <h3 className='mob'>{`Want to connect with ${sitter.sitterHandle} ?`}</h3>
           <div>
-            <Link to={`/sitter/${sitter.sitterId}/booking`}>
+            <a href={`/sitter/${sitter.sitterId}/booking`}>
               <button
                 className='btn btn-block'
                 style={{ backgroundColor: 'white', color: 'purple' }}
               >
                 Book Now
               </button>
-            </Link>
+            </a>
           </div>
         </div>
         <h2 className='principal'>Similar Profiles Nearby</h2>

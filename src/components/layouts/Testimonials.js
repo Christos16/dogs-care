@@ -34,10 +34,7 @@ const Testimonials = () => {
                         to leave my pet alone.
                       </div>
                       <div className='media'>
-                        <div className='media-left d-flex mr-3'>
-                          <img src='/examples/images/clients/1.jpg' alt='' />
-                        </div>
-                        <div className='media-body'>
+                        <div className='media-body credit'>
                           <div className='overview'>
                             <div className='name'>
                               <b>Bella Thompson</b>
@@ -79,10 +76,7 @@ const Testimonials = () => {
                         and so lovely.
                       </div>
                       <div className='media'>
-                        <div className='media-left d-flex mr-3'>
-                          <img src='/examples/images/clients/2.jpg' alt='' />
-                        </div>
-                        <div className='media-body'>
+                        <div className='media-body credit'>
                           <div className='overview'>
                             <div className='name'>
                               <b>Petros Gianopoulos</b>
@@ -124,10 +118,7 @@ const Testimonials = () => {
                         Fantastic ! 10/10 for the services.
                       </div>
                       <div className='media'>
-                        <div className='media-left d-flex mr-3'>
-                          <img src='/examples/images/clients/3.jpg' alt='' />
-                        </div>
-                        <div className='media-body'>
+                        <div className='media-body credit'>
                           <div className='overview'>
                             <div className='name'>
                               <b>Konstantinos Merkoulis</b>
@@ -165,10 +156,7 @@ const Testimonials = () => {
                         του έδινα όλη την αγάπη που συνήθως κάνω
                       </div>
                       <div className='media'>
-                        <div className='media-left d-flex mr-3'>
-                          <img src='/examples/images/clients/4.jpg' alt='' />
-                        </div>
-                        <div className='media-body'>
+                        <div className='media-body credit'>
                           <div className='overview'>
                             <div className='name'>
                               <b>Maria Stavropoula </b>
@@ -213,9 +201,6 @@ const Testimonials = () => {
                         σκυλί μου. Θα το χρησιμοποιήσω και πάλι
                       </div>
                       <div className='media'>
-                        <div className='media-left d-flex mr-3'>
-                          <img src='/examples/images/clients/5.jpg' alt='' />
-                        </div>
                         <div className='media-body'>
                           <div className='overview'>
                             <div className='name'>
@@ -255,9 +240,6 @@ const Testimonials = () => {
                         pet will be in great hands !!!!
                       </div>
                       <div className='media'>
-                        <div className='media-left d-flex mr-3'>
-                          <img src='/examples/images/clients/6.jpg' alt='' />
-                        </div>
                         <div className='media-body'>
                           <div className='overview'>
                             <div className='name'>

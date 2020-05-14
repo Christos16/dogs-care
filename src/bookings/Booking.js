@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bookNow } from '../actions/bookingAction';
 import { getSitter } from '../actions/SittersAction';
+import { toast } from 'react-toastify';
 import Modal from './Modal';
-import { setTimeout } from 'timers';
+import styles from './modal.module.scss';
+import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
+toast.configure();
 
 class Booking extends Component {
   state = {
     comment: '',
     from: '',
     to: '',
-    top: -100
+    top: -400
   };
 
   componentDidMount() {
@@ -28,18 +31,10 @@ class Booking extends Component {
       comment: this.state.comment
     };
     this.props.bookNow(this.props.sitter.sitterId, newBooking);
-
-    this.setState({ top: 46 }, () => {
-      setTimeout(() => {
-        this.setState({
-          top: -100
-        });
-      }, 5000);
+    toast('Booking complete. Thank you !', {
+      position: 'top-right',
+      className: `${styles.success}`
     });
-
-    setTimeout(() => {
-      this.redirect();
-    }, 6000);
   };
   redirect = () => {
     return this.props.history.push('/');
@@ -50,13 +45,8 @@ class Booking extends Component {
         <Modal top={this.state.top} />
         <div class='container'>
           <div class='py-1 text-center'>
-            <h2
-              className='mb-5 mt-5'
-              style={{ color: 'purple', fontSize: '40px' }}
-            >
-              Booking
-            </h2>
-            <p class='lead mb-5' style={{ color: 'black', font: 'bold' }}>
+            <h2 className={`mb-5 ${styles.header}`}>Booking</h2>
+            <p class={`lead mb-5 ${styles.subhead}`}>
               Only a few more steps and your pet will be cuddled by a certified
               pet sitter until your return
             </p>
@@ -66,7 +56,7 @@ class Booking extends Component {
             <div class='col-md-4 order-md-2 mb-4'>
               <img
                 src={'/images/walky.jpg'}
-                style={{ width: '350px', height: 'auto' }}
+                className={styles.image}
                 alt='sitter'
               />
             </div>

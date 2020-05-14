@@ -1,0 +1,32 @@
+.success {
+  background-color: lightgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.header {
+  color: purple;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subhead {
+  font-weight: bold;
+}
+.image {
+  width: 350px;
+  height: auto;
+}
+
+@media (max-width: 770px) {
+  .header {
+    font-size: 25px;
+  }
+  .subhead {
+    font-size: 15px;
+  }
+
+  .image {
+    width: 280px;
+  }
+}

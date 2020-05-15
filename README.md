@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Full Stack Application concept consisting of a marketplace connecting dog parents with dog sitters. The app was built using the MERN stack (MongoDB, Express, React and Node.js) 
 
 ## Available Scripts
 

@@ -2,6 +2,12 @@ Full Stack Application concept consisting of a marketplace connecting dog parent
 
 https://dogs-care.web.app/
 
+For the live version:
+
+https://dogs-care.web.app/
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
